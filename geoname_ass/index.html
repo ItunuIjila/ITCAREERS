@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="IJILA ITUNU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>IT CAREERS SWITCH GEONAMES PHP TASK</title>
+    
+</head>
+
+<body>
+<!-- Intresting places to see -->
+<table class="table table-bordered border border-secondary">
+    <tr>
+        <th>API name</th>
+        <th>API description</th>
+        <th>Click to request</th>
+    </tr>
+    <tr>
+        <td> <h6>Interesting Places to see in a city</h6> 
+            <br>
+        
+            
+            <div class="form-check">
+                <label class="form-check-label">Paris</label>
+                <input type="radio" class="country2 form-check-input" id="Paris" name="country" value="2988507">
+              
+            </div>
+            <div class="form-check">
+                <label for="London" class="form-check-label">London</label>
+                <input type="radio" class="country2 form-check-input" id="London" name="country" value="2643743">
+            </div>
+
+            <div class="form-check">
+                <label>Moscow</label>
+                <input type="radio" class="country2 form-check-input" id="Moscow" name="country" value="524901">
+            </div>
+
+        </td> 
+        <td>
+            <br>Returns a list of intresting places to visit in a city
+        </td>
+        <td>
+            <button class="button" id="Interestingbtn">Click!</button></td>
+        </td>
+
+    </tr>
+    
+
+    
+
+    <tr>				
+        <td class="col1"> <h6>Tourist Cities</h6> <br>
+            
+                <select class="float" id="tourcity">
+                    <option value="paris">Paris</option>
+                    <option value="rome">Rome</option>
+                    <option value="florence">Florence</option>
+                    <option value="london">London</option>
+                    <option value="milan">Milan</option>
+                    
+            </td>
+            <td>
+                Click to learn more about your next tourist destinaton
+            </td>
+        <td>
+            <button id="touristbtn" class="button">Click!</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td><h6>Nearby Places</h6><br>
+            
+            <div class="latLong">
+            <input class="form-control form-control-sm latitude" id="latitude" type="number" name="latitude" min="-180" max="10" placeholder="Lat">
+            <input class="form-control form-control-sm longitude" id="longitude" type="number" name="longitude" min="-180" max="180" placeholder="Long">
+        </div>
+        
+    </td>
+        <td>To obtain the closet location based on population using lat and log</td>
+
+        <td><button class="button" id="populationbtn">Click!</button></td>
+    </tr>
+
+    <tr>
+        <td colspan="3">
+            <h3> Result</h3>
+
+            <p>
+                <ol>
+                    <li id="paris"></li>
+                    <li id="london"></li>
+                    <li id="moscow"></li>
+                </ol> 
+            </p>
+        
+            <p>Tourist City Details: <span id="touristcityloc"></span></p>	
+            <p>City <span id="cityname"></span> </p>
+            <p>Country <span id="ctryname"></span> </p>
+            
+            
+                
+           
+        </td>
+    </tr>
+</table>
+
+<script type="application/javascript" src ="lib/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="lib/js/script.js"></script>
+    
+</body>
+
+</html>
